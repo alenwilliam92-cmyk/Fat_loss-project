@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Fat Loss Journey</title>
+    <meta name="description"
+        content="Securely login to your Fat Loss Diet Plan Creator and track your progress towards a healthier you.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <main class="login-container">
+        <div class="login-card">
+            <header class="login-header">
+                <div class="logo">
+                    <span class="logo-icon">🔥</span>
+                    <h1>Fat Loss <span class="accent">Journey</span></h1>
+                </div>
+                <p class="subtitle">Welcome back! Please enter your details.</p>
+            </header>
+
+            <form id="login-form" class="login-form">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                        <span class="input-icon">✉️</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <span class="input-icon">🔒</span>
+                        <button type="button" id="toggle-password" class="toggle-password"
+                            aria-label="Toggle password visibility">
+                            👁️
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span class="checkbox-custom"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn-login">Sign In</button>
+            </form>
+
+            <div class="social-login">
+                <div class="divider">or continue with</div>
+                <div class="social-btns">
+                    <button class="btn-social">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
+                            class="social-icon">
+                        Google
+                    </button>
+                    <button class="btn-social">
+                        <img src="https://www.svgrepo.com/show/475633/apple-color.svg" alt="Apple" class="social-icon">
+                        Apple
+                    </button>
+                </div>
+            </div>
+
+            <footer class="login-footer">
+                <p>Don't have an account? <a href="#" class="signup-link">Create an account</a></p>
+            </footer>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
