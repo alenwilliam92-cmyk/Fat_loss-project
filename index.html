@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat Loss Diet Plan Creator | Kerala Edition</title>
+    <meta name="description" content="Generate a personalized 7-day fat loss diet plan with traditional Kerala meals.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blob"></div>
+    <div class="background-blob second"></div>
+
+    <main class="container">
+        <header>
+            <h1>Fat Loss <span>Diet Creator</span></h1>
+            <p>Generate your personalized Kerala-style fat loss plan in seconds.</p>
+        </header>
+
+        <section id="input-section" class="card">
+            <form id="diet-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" required min="15" max="100" placeholder="e.g. 25">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" required min="30" max="250" placeholder="e.g. 75">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" required min="100" max="250" placeholder="e.g. 170">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="activity">Activity Level</label>
+                        <select id="activity" required>
+                            <option value="1.2">Sedentary (Little/no exercise)</option>
+                            <option value="1.375">Light (1-3 days/week)</option>
+                            <option value="1.55">Moderate (3-5 days/week)</option>
+                            <option value="1.725">Active (6-7 days/week)</option>
+                            <option value="1.9">Very Active (Elite athlete)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preference">Food Preference</label>
+                        <select id="preference" required>
+                            <option value="non-veg">Non-Vegetarian</option>
+                            <option value="veg">Pure Vegetarian</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal">Goal Speed</label>
+                        <select id="goal" required>
+                            <option value="0.5">Steady (0.5 kg/week)</option>
+                            <option value="1">Fast (1 kg/week)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Generate My Plan</button>
+            </form>
+        </section>
+
+        <section id="results-section" class="hidden">
+            <div class="results-header">
+                <div class="calorie-card">
+                    <h3>Daily Calorie Target</h3>
+                    <div id="target-calories" class="calorie-value">--</div>
+                    <p>kcal / day</p>
+                </div>
+                <div class="water-card">
+                    <h3>Water Intake</h3>
+                    <div id="water-target" class="calorie-value">--</div>
+                    <p>Litres / day</p>
+                </div>
+            </div>
+
+            <div class="diet-plan-grid" id="diet-plan-container">
+                <!-- Days will be injected here -->
+            </div>
+
+            <div class="actions">
+                <button id="regenerate-btn" class="btn-secondary">Generate Again</button>
+            </div>
+
+            <section id="grocery-section" class="card grocery-card">
+                <h3>🛒 Weekly Shopping List</h3>
+                <p class="grocery-subtitle">Everything you need to buy for this week's plan.</p>
+                <div id="grocery-list" class="grocery-list-grid">
+                    <!-- Ingredients will be injected here -->
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
